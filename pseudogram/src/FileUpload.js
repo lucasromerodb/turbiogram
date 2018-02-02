@@ -5,7 +5,6 @@ import React, {Component} from 'react';
 var buttonstyle = {
   padding: 20,
   borderRadius: 5,
-  border: 'none',
   cursor: 'pointer',
   // boxShadow: '0 3px 15px lightgray',
   border: '1px solid lightgray',
@@ -26,9 +25,9 @@ class FileUpload extends Component {
   render() {
     return(
       <div>
-        <progress value={this.state.uploadValue} max="100"></progress>
-        <br />
         <input type="file" style={buttonstyle} onChange={this.props.onUpload} />
+        <br />
+        <progress value={this.state.uploadValue} max="100"></progress>
         <hr />
       </div>
     )

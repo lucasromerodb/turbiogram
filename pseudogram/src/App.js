@@ -98,7 +98,7 @@ class App extends Component {
               <br />
               <span>Subido por: {picture.displayName}</span>
               <br />
-              <img src={picture.image} />
+              <img src={picture.image} alt="Foto subida" />
 
             </div>
           )).reverse()
