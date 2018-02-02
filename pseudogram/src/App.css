@@ -23,6 +23,10 @@ body {
   font-size: large;
 }
 
+.profile-picture {
+  border-radius: 200px
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

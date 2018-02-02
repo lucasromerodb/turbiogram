@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
+import FileUpload from './FileUpload.js'
 import './App.css';
 
 var styles = {
@@ -53,9 +54,10 @@ class App extends Component {
     if (this.state.user) {
       return(
         <div>
-          <img src={this.state.user.photoURL} alt={this.state.user.displayName} />
+          <img width="240" height="240" className="profile-picture" src={this.state.user.photoURL} alt={this.state.user.displayName} />
           <p>Hola, {this.state.user.displayName}</p>
           <button style={buttonstyle} onClick={this.handleLogout}>Cerrar sesión</button>
+          <FileUpload />
         </div>
       );
     } else {
