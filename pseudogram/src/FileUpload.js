@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 // import firebase from 'firebase';
 
-
 var buttonstyle = {
   padding: 20,
   borderRadius: 5,
